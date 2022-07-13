@@ -24,26 +24,38 @@
     "nav"
     "main"
     "footer";
-    /* gap: 15px; */
     text-align: center;
   
   }
   
-  .nav {
+  /* .nav {
     grid-area: nav;
     background-color: var(--background_nav_y_aside);
     display: flex;
     justify-content: space-between;
     align-items:center;
-    padding: 10px;
+    padding-top:5% ;
+    padding-bottom:5% ;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: auto;
+    z-index: 1;
+  }
+   */
+
+   .nav {
+    grid-area: nav;
+    background-color: var(--background_nav_y_aside);
+    display: flex;
+    justify-content: space-between;
+    align-items:stretch;
+    padding: 20px;
     position: fixed;
     top: 0;
     width: 97vw;
     z-index: 1;
   }
-  
-
-
   
   .youclone__menu{
     display: flex;
@@ -55,8 +67,9 @@
   }
   
   .logo {
+
     width: 50px;
-  }
+    }
   
   
   .search{
@@ -64,17 +77,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  
   }
   .search input {
     height: 2vh;
-    width:37vw;
+     min-width:37vw; 
     border: 1px solid rgba(254, 254, 254, 0.356);
     background-color: var(--background_body);
-  
+    margin-left: -40px;
     color: #FFFFFF;
-    margin-right: 5px;
+    margin-right: 2%;
     font-size: 0.7rem;
+
+    width: 100%;
+
+
+
   }
   
    .search-btn {
@@ -99,6 +116,8 @@
     color: white;
     align-items: center;
     margin: 0.3vh;
+
+
   
   }
   .user-icons{
@@ -163,6 +182,10 @@
     display: table-column;
     grid-template-areas:
 
+
+
+
+    
       /* "video-1 video-2 video-3 video-4 video-5 video-6 video-7 video-8 video-9 video-10 video-11 video-12" */
 
 
@@ -205,7 +228,7 @@
     text-align: center;
 
   }
- .lista-de-reproduccion hr{
+ .lista-de-reproduccion hr,  .lista-de-reproduccion h3{
     display: none 
   }
 
@@ -264,6 +287,8 @@
     background-color: rgba(0, 208, 255, 0.826);
     width: auto;
     height: 108px;
+    max-height: 100px;
+    margin-top: auto;
     display: grid;
     margin-bottom: 20px;
 
@@ -282,6 +307,7 @@
     object-fit: cover;
     width: 100%;
     height: 100%;
+ ;
   }
   
   .publicidad-1:hover,
@@ -335,14 +361,21 @@
     display: flex;
     flex-wrap: wrap;
     gap:30px;
+    margin-top: 10px;
     align-items: center;
 }
 
-  .article > *:not(div h4) {
-    
-    background-color: transparent;
-    /* margin-bottom: 3vh; */
-  }
+
+
+.article > *:not(div h4) {
+  width: 315px;
+  height: 210px;
+  background-color: transparent;
+  
+}
+
+
+
 
   
   .article div {

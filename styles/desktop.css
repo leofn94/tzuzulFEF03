@@ -167,6 +167,7 @@ nav .material-symbols-outlined{
   scrollbar-color: var(--scrollbar) grey;
   height: 100vh;
   margin-top: 10vh;
+  position: relative;
 }
 
 .lista-de-reproduccion h3 {
