@@ -1,0 +1,155 @@
+
+  .logo {
+    width: 100px;
+  }
+
+  .search input {
+    height: 4.5vh;
+    width:30vw;
+  }
+  
+   .search-btn {
+    width: 50px;
+    height: 40px;
+  }
+  
+  nav .material-symbols-outlined{
+    font-size:25px;
+  }
+  
+
+   .main {
+    width: 100%;
+    height: 100%;
+    grid-area: main;
+  
+    display: grid;
+    grid-template-areas:
+      " section section"
+      " section section"
+      " article article "
+      " article article "
+      " article article "
+      " article article "
+      " article article "
+      " article article"
+      " article article "
+      " article article "
+      " article article "
+      " article article "
+      " article article "
+      " article article"
+      "lista-de-reproduccion"
+      ;
+
+    gap: 10px;
+  } 
+  
+
+  
+.lista-de-reproduccion {
+    grid-area: lista-de-reproduccion;
+    text-align: left;
+    align-items: center;
+    padding-top: 3px;
+    color: rgb(255, 255, 255);
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    bottom: -2px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    z-index: 1;
+  }
+  
+  
+  .lista-de-reproduccion > * {
+    display:inline-block;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    align-items: center;
+  }
+  
+  span {
+    color: red;
+  }
+
+
+
+
+
+  .section {
+    width: 100%;
+    height: 100%;
+    grid-area: section;
+    display: grid;
+    grid-template-areas: 
+    "publicidad-1 publicidad-2 "
+    "etiquetas etiquetas";
+  
+  }
+
+
+
+  .publicidad-1,
+  .publicidad-2 {
+    grid-area: publicidad-1, publicidad-2;
+    background-color: rgba(0, 208, 255, 0.826);
+    width: 333px;
+    height: 108px;
+    display: grid;
+    margin-bottom: -50px;
+  }
+
+  .etiquetas {
+    grid-area: etiquetas;
+    width: 750px;
+    height: 108px;
+    margin-bottom: 70px;
+  }
+
+
+  .article{
+    flex-direction: row;
+
+  }
+
+/* 
+
+
+
+
+  .article {
+    width: 100%;
+    height: 100%;
+    grid-area: article;
+  
+    display: grid;
+    grid-template-areas:
+      "video-1 video-2"
+      "video-1 video-2"
+      "video-3 video-4"
+      "video-3 video-4"
+      "video-5 video-6"
+      "video-5 video-6"
+      "video-7 video-8"
+      "video-7 video-8"
+      "video-9 video-10"
+      "video-9 video-10"
+      "video-11 video-12"
+      "video-11 video-12"      
+      
+      
+      
+      ;
+  }
+   */
+
+
+
+
+/* 
+  .footer {
+    margin-bottom: 80px;
+  }
+   */
