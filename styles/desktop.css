@@ -9,37 +9,37 @@ body {
 .nav {
   grid-area: nav;
   padding: 20px;
-  width: 97.5vw;
+  width: 100%;
 }
 
 .logo {
   width: 160px;
+  display: flex;
+  margin-left: 0.4cm;
 }
 
 .search input {
-  margin-right: 5px;
-  font-size: 16px;
+  font-size: 1.2rem;
+  width: 45vw;
 }
 
  .search-btn {
   width: 60px;
-  height: 43px;
   border: 1px solid rgba(254, 254, 254, 0.356);
 }
 
 nav .material-symbols-outlined{
-  font-size:30px;
+  font-size:35px;
 }
 
 .user-icons{
-  margin-right: 50px;
+  margin-right: 80px;
 }
 
 .main {
   width: 100%;
   height: 100%;
   grid-area: main;
-
   display: grid;
   grid-template-areas:
     "lista-de-reproduccion section section section section"
@@ -49,22 +49,22 @@ nav .material-symbols-outlined{
     "lista-de-reproduccion article article article article"
     "lista-de-reproduccion article article article article"
     "lista-de-reproduccion article article article article";
-  gap: 10px;
 }
 
+
 .section {
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
   grid-area: section;
   display: grid;
   grid-template-areas: "publicidad-1 publicidad-2 etiquetas etiquetas";
   margin-top: 12vh;
 }
 
+
 .article {
   width: 100%;
   height: 100%;
-  margin-left: 1%;
 
   grid-area: article;
 
@@ -89,6 +89,7 @@ nav .material-symbols-outlined{
   position:initial;
   z-index: 0;
   padding-top: 130px;
+  margin-right: -50px;
 }
 
 .lista-de-reproduccion div{
@@ -134,23 +135,22 @@ nav .material-symbols-outlined{
   font-size: 26px;
 }
 
+
+
 .publicidad-1,
 .publicidad-2 {
   grid-area: publicidad-1, publicidad-2;
-  width: 370px;
+  width: 333px;
 }
 
 .etiquetas {
   grid-area: etiquetas;
   margin-top: 30px;
-  margin-left: -10px;
 }
 
 .article > *:not(div h4) {
   width: 333px;
   height: 210px;
-
-  margin: -10px;
 }
 
 iframe{
